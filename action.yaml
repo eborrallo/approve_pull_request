@@ -1,0 +1,12 @@
+name: 'Approve pull request'
+description: ''
+inputs:
+  github-token:
+    description: 'GitHub Token'
+    required: true
+  number:
+    description: 'Number of pull request'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
