@@ -11,11 +11,6 @@ const main = async () => {
     pull_number: number,
     event: 'APPROVE'
   })
- /*  await octokit.pulls.merge({
-    ...context.repo,
-    pull_number: number,
-  }
-  ) */
 }
 
 main().catch(err => core.setFailed(err.message))
